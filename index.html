@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Dairy Farm HTML5 Template</title>
+    <title>Satvik Dairy</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -577,68 +578,117 @@
 
     <!-- Header area start -->
     <header>
-      <div id="header-sticky" class="bd-header__area-2 herder-transparent">
+      <!-- Top Bar -->
+      <div class="top-bar bg-dark text-white py-2 d-none d-lg-block">
         <div class="container">
-          <div class="bd-header__main pt-30">
-            <div class="row align-items-center">
-              <div class="col-xxl-5 col-xl-6 col-lg-8 d-none d-md-block">
-                <div class="bd-header__menu-wrapper d-flex align-items-center">
-                  <div class="main-menu main-menu-2 d-none d-none d-lg-block">
-                    <nav id="mobile-menu">
-                      <ul>
-                        <li>
-                          <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                          <a href="about.html">About</a>
-                        </li>
-                        <li>
-                          <a href="gallery.html">Gallery</a>
-                        </li>
-                        <li>
-                          <a href="service-details.html">Service</a>
-                        </li>
-                        <li>
-                          <a href="shop.html">Shop</a>
-                        </li>
-
-                        <li>
-                          <a href="contact.html">Contact</a>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="d-flex align-items-center">
+                <div class="me-4">
+                  <a
+                    href="mailto:info@satvikdairy.com"
+                    class="text-white text-decoration-none"
+                  >
+                    <i class="fas fa-envelope me-2"></i>info@satvikdairy.com
+                  </a>
                 </div>
-              </div>
-              <div
-                class="col-xxl-2 col-xl-2 col-lg-2 col-6 d-lg-none d-xl-block"
-              >
-                <div class="bd-header__logo-2 text-center">
-                  <a href="index.html">
-                    <img src="assets/img/logo/logo (1).png" alt="logo" />
+                <div class="me-4">
+                  <a
+                    href="tel:+91-8200718103"
+                    class="text-white text-decoration-none"
+                  >
+                    <i class="fas fa-phone me-2"></i>+91-8200718103
+                  </a>
+                </div>
+                <div>
+                  <a href="#" class="text-white text-decoration-none">
+                    <i class="fas fa-map-marker-alt me-2"></i>Kumbhariya,
+                    Borlai, Valsad
                   </a>
                 </div>
               </div>
-              <div class="col-xxl-5 col-xl-4 col-lg-4 col-6">
-                <div
-                  class="bd-header__right right-2 d-flex align-items-center justify-content-end"
-                >
-                  <div class="bd-header__hamburger">
-                    <div class="bd-header__hamburger-icon">
-                      <button class="side-toggle">
-                        <img
-                          src="assets/img/icon/hamburger-icon.png"
-                          alt="hamburger-icon"
-                        />
-                      </button>
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="social-links text-end">
+                <a href="#" class="text-white me-3"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="text-white me-3"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-white me-3"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-white"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Main Navigation -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/img/logo/logo (1).png"
+              alt="Satvik Dairy"
+              style="
+                height: 65px;
+                filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+              "
+            />
+          </a>
+
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">
+                  <i class="fas fa-home me-1"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                  <i class="fas fa-info-circle me-1"></i> About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">
+                  <i class="fas fa-images me-1"></i> Gallery
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service-details.html">
+                  <i class="fas fa-concierge-bell me-1"></i> Services
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">
+                  <i class="fas fa-shopping-cart me-1"></i> Shop
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  <i class="fas fa-envelope me-1"></i> Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Header area end -->
 
@@ -674,6 +724,7 @@
           </div>
         </div>
       </section>
+
       <!-- Hero area start -->
 
       <!-- About area start -->
@@ -688,14 +739,20 @@
                     Know About Our Farm & History
                   </h2>
                   <p class="bd-section__paragraph">
-                    Rich in A2 Protein: Unlike regular cow milk, Gir cow milk
-                    contains A2 beta-casein protein, which is easier to digest
-                    and may reduce the risk of allergies and inflammation.
-                    Nutrient-Dense: It is packed with essential nutrients,
-                    including calcium, vitamins, and minerals, supporting bone
-                    health and overall well-being. Boosts Immunity: Regular
-                    consumption is believed to enhance immune function due to
-                    its natural antioxidants.
+                    Satvik is the vision of three childhood friends-Mr. Kavish
+                    Jain, Mr. Uday Rathod, and Mr. Narendra Tiwari-who left
+                    behind successful corporate careers to pursue a
+                    purpose-driven journey in dairy farming. United by a decade
+                    of professional experience and a shared concern for public
+                    health, we founded Satvik in Pardi, a small town, with one
+                    clear mission: to provide pure, non-adulterated milk to our
+                    community.Satvik was born out of the belief that everyone
+                    deserves access to real, unadulterated milk. Our name
+                    reflects our promise-purity, honesty, and wholesomeness in
+                    every drop. Today, our ambition is bigger than ever: to
+                    bring the taste of real milk to households across India,
+                    ensuring that our customers enjoy the benefits of milk as
+                    nature intended.
                   </p>
                 </div>
 
@@ -743,7 +800,7 @@
             <div class="col-12">
               <div class="bd-section__title-wrapper text-center mb-50">
                 <span class="bd-sub__title">Services</span>
-                <h2 class="bd-section__title">what we provide</h2>
+                <h2 class="bd-section__title">What We Provide</h2>
               </div>
             </div>
           </div>
@@ -754,38 +811,34 @@
                   <a href="service-details.html">
                     <img
                       src="assets/img/service/gir milk.png"
-                      alt="service-thumb"
+                      alt="Fresh milk service-thumb"
                     />
                   </a>
                 </div>
                 <div class="bd-service__content-2 transition-3">
-                  <h3><a href="service-detasils.html">Fresh milk </a></h3>
+                  <h3><a href="service-detasils.html">Fresh Milk</a></h3>
                   <a class="bd-link__btn-2" href="service-details.html"
                     >Service Details</a
                   >
                   <div class="bd-service__icon">
-                    <span>
-                      <img
+                    <span
+                      ><img
                         src="assets/img/service/icon/1.png"
                         alt="service-icon"
-                      />
-                    </span>
+                    /></span>
                   </div>
                 </div>
                 <div class="bd-service__hover transition-3">
                   <div class="bd-service__overlay">
                     <div class="bd-service__icon">
-                      <span>
-                        <img
+                      <span
+                        ><img
                           src="assets/img/service/icon/1.png"
                           alt="service-icon"
-                        />
-                      </span>
+                      /></span>
                     </div>
                     <span class="bd-service__stroke-text">01</span>
-                    <h3>
-                      <a href="service-details.html">Fresh milk</a>
-                    </h3>
+                    <h3><a href="service-details.html">Fresh Milk</a></h3>
                     <p>Fresh A2 milk for the well-being of your loved ones</p>
                     <a class="bd-link__btn-2" href="service-details.html"
                       >Service Details</a
@@ -800,36 +853,34 @@
                   <a href="service-details.html">
                     <img
                       src="assets/img/service/service-02.jpg"
-                      alt="service-thumb"
+                      alt="Dairy products service-thumb"
                     />
                   </a>
                 </div>
                 <div class="bd-service__content-2 transition-3">
-                  <h3><a href="service-detasils.html">dairy products</a></h3>
+                  <h3><a href="service-detasils.html">Dairy Products</a></h3>
                   <a class="bd-link__btn-2" href="service-details.html"
                     >Service Details</a
                   >
                   <div class="bd-service__icon">
-                    <span>
-                      <img
+                    <span
+                      ><img
                         src="assets/img/service/icon/2.png"
                         alt="service-icon"
-                      />
-                    </span>
+                    /></span>
                   </div>
                 </div>
                 <div class="bd-service__hover transition-3">
                   <div class="bd-service__overlay">
                     <div class="bd-service__icon">
-                      <span>
-                        <img
+                      <span
+                        ><img
                           src="assets/img/service/icon/2.png"
                           alt="service-icon"
-                        />
-                      </span>
+                      /></span>
                     </div>
                     <span class="bd-service__stroke-text">02</span>
-                    <h3><a href="service-details.html">dairy products</a></h3>
+                    <h3><a href="service-details.html">Dairy Products</a></h3>
                     <p>
                       Fresh unadulterated milk products made from best quality
                       milk
@@ -847,33 +898,31 @@
                   <a href="service-details.html">
                     <img
                       src="assets/img/service/service-03.jpg"
-                      alt="service-thumb"
+                      alt="Organic manure service-thumb"
                     />
                   </a>
                 </div>
                 <div class="bd-service__content-2 transition-3">
-                  <h3><a href="service-detasils.html">organic manure</a></h3>
+                  <h3><a href="service-detasils.html">Organic Manure</a></h3>
                   <a class="bd-link__btn-2" href="service-details.html"
                     >Service Details</a
                   >
                   <div class="bd-service__icon">
-                    <span>
-                      <img
+                    <span
+                      ><img
                         src="assets/img/service/icon/3.png"
                         alt="service-icon"
-                      />
-                    </span>
+                    /></span>
                   </div>
                 </div>
                 <div class="bd-service__hover transition-3">
                   <div class="bd-service__overlay">
                     <div class="bd-service__icon">
-                      <span>
-                        <img
+                      <span
+                        ><img
                           src="assets/img/service/icon/3.png"
                           alt="service-icon"
-                        />
-                      </span>
+                      /></span>
                     </div>
                     <span class="bd-service__stroke-text">03</span>
                     <h3><a href="service-details.html">Organic Manure</a></h3>
@@ -1089,7 +1138,7 @@
                   />
                 </div>
                 <div class="bd-product__content">
-                  <h4><a href="#">organic fresh paneer</a></h4>
+                  <h4><a href="shop.html">organic fresh paneer</a></h4>
                   <span class="bd-product__new-price">₹700.00</span>
                 </div>
               </div>
@@ -1103,7 +1152,7 @@
                   />
                 </div>
                 <div class="bd-product__content">
-                  <h4><a href="#">organic gir cow milk</a></h4>
+                  <h4><a href="shop.html">organic gir cow milk</a></h4>
                   <span class="bd-product__new-price">₹80.00</span>
                   <span class="bd-product__old-price"><del>₹100.00</del></span>
                 </div>
@@ -1118,7 +1167,7 @@
                   />
                 </div>
                 <div class="bd-product__content">
-                  <h4><a href="#">Organic Gir A2 Ghee</a></h4>
+                  <h4><a href="shop.html">Organic Gir A2 Ghee</a></h4>
                   <span class="bd-product__new-price">₹1800.00</span>
                 </div>
               </div>
@@ -1132,7 +1181,7 @@
                   />
                 </div>
                 <div class="bd-product__content">
-                  <h4><a href="#">Full Fat Curd</a></h4>
+                  <h4><a href="shop.html">Full Fat Curd</a></h4>
                   <span class="bd-product__new-price">₹75.00</span>
                   <span class="bd-product__old-price"><del>₹85.00</del></span>
                 </div>
@@ -1393,6 +1442,12 @@
                           class="bd-footer__top-logo"
                           src="assets/img/logo/logo (1).png"
                           alt="logo"
+                          style="
+                            max-width: 160px;
+                            height: auto;
+                            display: block;
+                            margin: 0 auto;
+                          "
                         />
                       </a>
                     </div>
@@ -1542,5 +1597,6 @@
     <script src="assets/js/imagesloaded-pkgd.js"></script>
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>
