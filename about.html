@@ -20,6 +20,68 @@
     <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css"/>
+    <style>
+      .bd-about__thumb-wrapper-3 {
+        text-align: center;
+      }
+      .bd-about__thumb-main {
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        max-width: 100%;
+      }
+      .bd-about__thumb-shape {
+        position: absolute;
+        bottom: -40px;
+        right: -20px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 50%;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      }
+      .bd-about__values {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .bd-about__values-item {
+        background: #f9f9f9;
+        padding: 25px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid #eee;
+        transition: all 0.3s ease;
+      }
+      .bd-about__values-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+      }
+      .bd-about__values-item i {
+        font-size: 36px;
+        color: #4caf50;
+        margin-bottom: 15px;
+      }
+      .bd-about__values-item h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-transform: none;
+      }
+      .bd-about__values-item p {
+        font-size: 15px;
+        margin-bottom: 0;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 767px) {
+        .bd-about__thumb-shape {
+          display: none;
+        }
+        .bd-about__values {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -208,43 +270,28 @@
             <div class="col-lg-8">
               <div class="d-flex align-items-center">
                 <div class="me-4">
-                  <a
-                    href="mailto:info@satvikdairy.com"
-                    class="text-white text-decoration-none"
-                  >
-                    <i class="fas fa-envelope me-2"></i>info@satvikdairy.com
+                  <a href="mailto:satvik.milkfarm@gmail.com" class="text-white text-decoration-none">
+                    <i class="fas fa-envelope me-2"></i>satvik.milkfarm@gmail.com
                   </a>
                 </div>
                 <div class="me-4">
-                  <a
-                    href="tel:+91-8200718103"
-                    class="text-white text-decoration-none"
-                  >
+                  <a href="tel:+91-8200718103" class="text-white text-decoration-none">
                     <i class="fas fa-phone me-2"></i>+91-8200718103
                   </a>
                 </div>
                 <div>
                   <a href="#" class="text-white text-decoration-none">
-                    <i class="fas fa-map-marker-alt me-2"></i>Kumbhariya,
-                    Borlai, Valsad
+                    <i class="fas fa-map-marker-alt me-2"></i>Kumbhariya, Borlai, Valsad
                   </a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="social-links text-end">
-                <a href="#" class="text-white me-3"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" class="text-white me-3"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="#" class="text-white me-3"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" class="text-white"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </div>
@@ -252,27 +299,13 @@
       </div>
 
       <!-- Main Navigation -->
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3"
-      >
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img
-              src="assets/img/logo/logo (1).png"
-              alt="Satvik Dairy"
-              style="
-                height: 65px;
-                filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
-              "
-            />
+            <img src="assets/img/logo/logo (1).png" alt="Satvik Dairy" style="height: 65px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
           </a>
-
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
+          
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <i class="fas fa-bars"></i>
           </button>
 
@@ -348,39 +381,38 @@
       <!-- About area start -->
       <section class="bd-about__area pt-120 pb-60">
         <div class="container">
-          <div class="row align-items-center">
+          <div class="row align-items-center wow fadeInUp" data-wow-delay=".3s">
             <div class="col-lg-6">
-              <div class="bd-about__thumb w-img mb-60">
-                <img src="assets/img/about/back.jpg" alt="about-thumb" />
+              <div class="bd-about__thumb-wrapper-3 mb-60 p-relative">
+                <img class="bd-about__thumb-main" src="assets/img/about/back.jpg" alt="Our dairy farm">
+                <div class="bd-about__thumb-shape">
+                  <img src="assets/img/counter/counter-01.png" alt="cow shape">
+                </div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="bd-about__content-box-3 mb-60">
-                <div class="bd-section__title-wrapper mb-40">
+                <div class="bd-section__title-wrapper mb-30">
                   <span class="bd-sub__title">About Us</span>
-                  <h2 class="bd-section__title mb-25">Our Mission</h2>
+                  <h2 class="bd-section__title mb-25">Our Mission: Pure Milk, Honest Farming</h2>
                   <p class="bd-section__paragraph">
-                    Our journey began with a troubling realization. While
-                    working in different industries, we repeatedly came across
-                    reports of adulteration in dairy products—especially the
-                    widespread use of palm oil in milk and ghee. These practices
-                    are not only hard to detect but also pose significant health
-                    risks. We felt it was unacceptable to compromise people's
-                    well-being for profit. Motivated by a sense of
-                    responsibility and a desire to make a positive impact, we
-                    decided to take a leap of faith. We left our high-paying
-                    jobs and pooled our resources to start our own dairy farm.
-                    Our goal was simple yet ambitious: deliver genuinely pure
-                    milk to as many people as possible. We started small,
-                    purchasing our first Housten cow. Over time, our herd has
-                    grown to include more than 10 cows, a healthy mix of Gir and
-                    Housten breeds. Each step of our journey has been guided by
-                    our commitment to transparency, quality, and the well-being
-                    of our customers. Satvik was born out of the belief that
-                    everyone deserves access to real, unadulterated milk. Our
-                    name reflects our promise—purity, honesty, and wholesomeness
-                    in every drop.
+                    Our journey began with a troubling realization: the widespread adulteration in dairy products. Motivated by a sense of responsibility, we left our corporate jobs to start a dairy farm committed to one simple goal: delivering genuinely pure milk.
                   </p>
+                  <p class="bd-section__paragraph">
+                    Starting with our first cow, our herd has grown to a healthy mix of Gir and Housten breeds. Every step is guided by our commitment to transparency, quality, and the well-being of our customers and our animals.
+                  </p>
+                </div>
+                <div class="bd-about__values">
+                  <div class="bd-about__values-item">
+                    <i class="fas fa-leaf"></i>
+                    <h4>100% Pure &amp; Natural</h4>
+                    <p>No additives, no compromises. Just fresh, wholesome milk.</p>
+                  </div>
+                  <div class="bd-about__values-item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Ethical &amp; Humane</h4>
+                    <p>Our cows are part of our family, raised with care and respect.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -401,7 +433,7 @@
                     milk—we believe in creating a healthier future.
                   </p>
                 </div>
-                <div class="bd-skill__btn">
+                <div class="bd-skill__btn" style="position: relative;">
                   <a class="bd-theme__btn-4" href="shop.html">more products</a>
                 </div>
               </div>
