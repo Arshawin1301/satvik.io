@@ -27,6 +27,25 @@
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/navbar.css" />
+    <style>
+      .bd-about__features-list ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .bd-about__features-list ul li {
+        font-size: 18px;
+        font-weight: 500;
+        color: #555;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+      .bd-about__features-list ul li i {
+        color: #4caf50;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -586,10 +605,10 @@
               <div class="d-flex align-items-center">
                 <div class="me-4">
                   <a
-                    href="mailto:info@satvikdairy.com"
+                    href="mailto:satvik.milkfarm@gmail.com"
                     class="text-white text-decoration-none"
                   >
-                    <i class="fas fa-envelope me-2"></i>info@satvikdairy.com
+                    <i class="fas fa-envelope me-2"></i>satvik.milkfarm@gmail.com
                   </a>
                 </div>
                 <div class="me-4">
@@ -653,7 +672,7 @@
             <i class="fas fa-bars"></i>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" id="navbarNav" style="">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a class="nav-link active" href="index.html">
@@ -732,57 +751,34 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
-              <div class="bd-about__content-box mb-60">
-                <div class="bd-section__title-wrapper mb-25">
+              <div class="bd-about__content-box mb-60 wow fadeInLeft" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                <div class="bd-section__title-wrapper mb-40">
                   <span class="bd-sub__title">About Us</span>
                   <h2 class="bd-section__title s-2 mb-30">
-                    Know About Our Farm & History
+                    From Our Farm to Your Family
                   </h2>
                   <p class="bd-section__paragraph">
-                    Satvik is the vision of three childhood friends-Mr. Kavish
-                    Jain, Mr. Uday Rathod, and Mr. Narendra Tiwari-who left
-                    behind successful corporate careers to pursue a
-                    purpose-driven journey in dairy farming. United by a decade
-                    of professional experience and a shared concern for public
-                    health, we founded Satvik in Pardi, a small town, with one
-                    clear mission: to provide pure, non-adulterated milk to our
-                    community.Satvik was born out of the belief that everyone
-                    deserves access to real, unadulterated milk. Our name
-                    reflects our promise-purity, honesty, and wholesomeness in
-                    every drop. Today, our ambition is bigger than ever: to
-                    bring the taste of real milk to households across India,
-                    ensuring that our customers enjoy the benefits of milk as
-                    nature intended.
+                    Troubled by widespread milk adulteration, we left our corporate careers to start Satvik Dairy Farm. Our mission is simple: to deliver pure, unadulterated, and wholesome milk from our happy cows straight to your home.
                   </p>
                 </div>
-
-                <a class="bd-theme__btn-4" href="about.html">read more</a>
+                <div class="bd-about__features-list mb-40">
+                  <ul>
+                    <li><i class="fas fa-check-circle"></i> 100% Pure &amp; Unadulterated Milk</li>
+                    <li><i class="fas fa-check-circle"></i> Ethically Raised Gir &amp; HF Cows</li>
+                    <li><i class="fas fa-check-circle"></i> Commitment to Quality &amp; Transparency</li>
+                  </ul>
+                </div>
+                <a class="bd-theme__btn-4" href="about.html">Discover Our Story</a>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="bd-about__image-wrapper-2 p-relative mb-60">
+              <div class="bd-about__image-wrapper text-center mb-60 wow fadeInRight" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
                 <img
-                  class="bd-about__image-3"
-                  src="assets/img/about/gir.jpg"
-                  alt="about-img"
-                />
-                <img
-                  class="bd-about__image-4"
                   src="assets/img/about/farm.png"
-                  alt="about-img"
+                  alt="A panoramic view of Satvik Dairy Farm with happy cows"
+                  class="img-fluid rounded shadow-lg"
+                  style="max-height: 450px; width: 100%; object-fit: cover"
                 />
-                <div class="bd-about__shape-2">
-                  <img
-                    src="assets/img/about/about-cow.png"
-                    alt="about-cow-icon"
-                  />
-                  <img
-                    class="bd-about__dashed-icon"
-                    src="assets/img/about/about-dashed.png"
-                    alt="about-dashed"
-                  />
-                </div>
-                <div class="bd-about__cercle"></div>
               </div>
             </div>
           </div>
@@ -797,7 +793,7 @@
             <div class="col-12">
               <div class="bd-section__title-wrapper text-center mb-50">
                 <span class="bd-sub__title">Our Breeds</span>
-                <h2 class="bd-section__title">Meet Our Cows</h2>
+                <h2 class="bd-section__title">Meet Our Herd</h2>
               </div>
             </div>
           </div>
@@ -854,6 +850,34 @@
                     nutrients, including protein, calcium, and vitamins,
                     making it a reliable and nutritious choice for daily
                     consumption by families.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="bd-about__image-wrapper-2 p-relative mb-60">
+                <img
+                  class="bd-about__image-3"
+                  src="assets/img/about/buf.jpg"
+                  alt="Buffalo at Satvik Dairy Farm"
+                  style="height: 450px; object-fit: cover; width: 100%"
+                />
+                <div class="bd-about__cercle"></div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center">
+              <div class="bd-about__content-box mb-60">
+                <div class="bd-section__title-wrapper mb-25">
+                  <h3 class="bd-section__title s-2 mb-30">Buffalo</h3>
+                  <p class="bd-section__paragraph">
+                    Buffalo milk is renowned for its rich and creamy texture,
+                    making it a preferred choice for dairy products like
+                    paneer, ghee, and yogurt. It is higher in fat, protein,
+                    and calcium compared to cow's milk, offering a dense
+                    nutritional profile that supports bone health and provides
+                    sustained energy.
                   </p>
                 </div>
               </div>
