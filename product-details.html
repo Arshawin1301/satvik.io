@@ -26,6 +26,68 @@
     <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/navbar.css"/>
+    <style>
+      .bd-service-details__area {
+        background-color: #f9f9f9;
+      }
+      .service-card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+        transition: all 0.3s ease;
+        height: 100%;
+        text-align: center;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      }
+      .service-card__icon {
+        font-size: 48px;
+        color: var(--clr-theme-1);
+        margin-bottom: 20px;
+      }
+      .service-card__title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      .service-card__text {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.7;
+      }
+      .bd-process-step {
+        text-align: center;
+        padding: 20px;
+        position: relative;
+      }
+      .bd-process-step__number {
+        width: 60px;
+        height: 60px;
+        background-color: var(--clr-theme-2);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--clr-common-body-text);
+        margin-bottom: 20px;
+        border: 4px solid #fff;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      }
+      .bd-process-step__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .bd-cta__area {
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -152,7 +214,7 @@
                     <a
                       target="_blank"
                       href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873"
-                      >12/A, Mirnada City Tower, NYC</a
+                      >Kumbhariya,Borlai,Valsad</a
                     >
                   </div>
                 </li>
@@ -161,7 +223,7 @@
                     <i class="far fa-phone"></i>
                   </div>
                   <div class="offcanvas__contact-text">
-                    <a href="tel:+088889797697">+088889797697</a>
+                    <a href="tel:+91-8200718103">+91-8200718103</a>
                   </div>
                 </li>
                 <li class="d-flex align-items-center">
@@ -588,43 +650,28 @@
             <div class="col-lg-8">
               <div class="d-flex align-items-center">
                 <div class="me-4">
-                  <a
-                    href="mailto:info@satvikdairy.com"
-                    class="text-white text-decoration-none"
-                  >
-                    <i class="fas fa-envelope me-2"></i>info@satvikdairy.com
+                  <a href="mailto:satvik.milkfarm@gmail.com" class="text-white text-decoration-none">
+                    <i class="fas fa-envelope me-2"></i>satvik.milkfarm@gmail.com
                   </a>
                 </div>
                 <div class="me-4">
-                  <a
-                    href="tel:+91-8200718103"
-                    class="text-white text-decoration-none"
-                  >
+                  <a href="tel:+91-8200718103" class="text-white text-decoration-none">
                     <i class="fas fa-phone me-2"></i>+91-8200718103
                   </a>
                 </div>
                 <div>
                   <a href="#" class="text-white text-decoration-none">
-                    <i class="fas fa-map-marker-alt me-2"></i>Kumbhariya,
-                    Borlai, Valsad
+                    <i class="fas fa-map-marker-alt me-2"></i>Kumbhariya, Borlai, Valsad
                   </a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="social-links text-end">
-                <a href="#" class="text-white me-3"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" class="text-white me-3"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="#" class="text-white me-3"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" class="text-white"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </div>
@@ -632,27 +679,13 @@
       </div>
 
       <!-- Main Navigation -->
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3"
-      >
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img
-              src="assets/img/logo/logo (1).png"
-              alt="Satvik Dairy"
-              style="
-                height: 65px;
-                filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
-              "
-            />
+            <img src="assets/img/logo/logo (1).png" alt="Satvik Dairy" style="height: 65px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
           </a>
-
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
+          
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <i class="fas fa-bars"></i>
           </button>
 
@@ -673,13 +706,13 @@
                   <i class="fas fa-images me-1"></i> Gallery
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service-details.html">
+              <li class="nav-item active">
+                <a class="nav-link active" href="service-details.html">
                   <i class="fas fa-concierge-bell me-1"></i> Services
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="shop.html">
+                <a class="nav-link" href="shop.html">
                   <i class="fas fa-shopping-cart me-1"></i> Shop
                 </a>
               </li>
@@ -715,13 +748,13 @@
                       <span><a href="index.html">Home</a></span>
                     </li>
                     <li class="trail-item trail-end">
-                      <span>product details</span>
+                      <span>service details</span>
                     </li>
                   </ul>
                 </nav>
               </div>
               <div class="bd-breadcrumb__title">
-                <h2>product details</h2>
+                <h2>DAIRY CONSULTATION</h2>
               </div>
             </div>
           </div>
@@ -729,1127 +762,416 @@
       </div>
       <!-- Breadcrumb area end -->
 
-      <!-- Product details area start -->
-      <div class="bd-product__details-area pt-100 pb-110">
+      <!-- Service details area start -->
+      <div class="bd-services__details-area pt-120 pb-60">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-xxl-6 col-lg-6">
-              <div
-                class="product__details-thumb-wrapper d-sm-flex align-items-start mr-50"
-              >
-                <div class="product__details-thumb-tab mr-20">
-                  <nav>
-                    <div
-                      class="nav nav-tabs flex-nowrap flex-sm-column"
-                      id="nav-tab"
-                      role="tablist"
-                    >
-                      <button
-                        class="nav-link active"
-                        id="img-1-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#img-1"
-                        type="button"
-                        role="tab"
-                        aria-controls="img-1"
-                        aria-selected="true"
-                      >
-                        <img
-                          src="assets/img/product/quick-view/nav-01.png"
-                          alt="product-sm-thumb"
-                        />
-                      </button>
-                      <button
-                        class="nav-link"
-                        id="img-2-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#img-2"
-                        type="button"
-                        role="tab"
-                        aria-controls="img-3"
-                        aria-selected="false"
-                      >
-                        <img
-                          src="assets/img/product/quick-view/nav-02.png"
-                          alt="product-sm-thumb"
-                        />
-                      </button>
-                      <button
-                        class="nav-link"
-                        id="img-3-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#img-3"
-                        type="button"
-                        role="tab"
-                        aria-controls="img-3"
-                        aria-selected="false"
-                      >
-                        <img
-                          src="assets/img/product/quick-view/nav-03.png"
-                          alt="product-sm-thumb"
-                        />
-                      </button>
-                    </div>
-                  </nav>
+          <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12">
+              <div class="bd-services__details-wrapper mb-60">
+                <div class="bd-services__details-thumb w-img mb-50">
+                  <img
+                    src="assets/img/service/details/milk.png"
+                    alt="service-thumb"
+                  />
                 </div>
-                <div class="product__details-thumb-tab-content">
-                  <div class="tab-content" id="productthumbcontent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="img-1"
-                      role="tabpanel"
-                      aria-labelledby="img-1-tab"
-                    >
-                      <div class="product__details-thumb-big w-img">
-                        <img
-                          src="assets/img/product/quick-view/quick-view-01.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="img-2"
-                      role="tabpanel"
-                      aria-labelledby="img-2-tab"
-                    >
-                      <div class="product__details-thumb-big w-img">
-                        <img
-                          src="assets/img/product/quick-view/quick-view-02.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="img-3"
-                      role="tabpanel"
-                      aria-labelledby="img-3-tab"
-                    >
-                      <div class="product__details-thumb-big w-img">
-                        <img
-                          src="assets/img/product/quick-view/quick-view-03.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-6 col-lg-6">
-              <div class="product__details-content pr-80">
-                <div
-                  class="product__details-top d-sm-flex align-items-center mb-5"
-                >
-                  <div class="product__details-tag mr-10">
-                    <a href="#">Construction</a>
-                  </div>
-                  <div class="product__details-rating mr-10">
-                    <a href="#"><i class="fa-solid fa-star"></i></a>
-                    <a href="#"><i class="fa-solid fa-star"></i></a>
-                    <a href="#"><i class="fa-solid fa-star"></i></a>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div class="product__details-review-count">
-                    <a href="#">10 Reviews</a>
-                  </div>
-                </div>
-                <h3 class="product__details-title">
-                  Dairy products are derived from milk
-                </h3>
-                <div class="product__details-price">
-                  <span class="old-price">$30.35</span>
-                  <span class="new-price">$19.25</span>
-                </div>
-                <p>
-                  Priyoshop has brought to you the Hijab 3 Pieces Combo Pack
-                  PS23. It is a completely modern design and you feel
-                  comfortable to put on this hijab. Buy it at the best price.
-                </p>
-
-                <div class="product__details-action mb-35">
-                  <div class="product__quantity">
-                    <div class="product-quantity-wrapper">
-                      <form action="#">
-                        <button class="cart-minus">
-                          <i class="fa-light fa-minus"></i>
-                        </button>
-                        <input class="cart-input" type="text" value="1" />
-                        <button class="cart-plus">
-                          <i class="fa-light fa-plus"></i>
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="product__add-cart">
-                    <a href="javascript:void(0)" class="bd-fill__btn cart-btn"
-                      ><i class="fa-solid fa-basket-shopping"></i> Add To
-                      Cart</a
-                    >
-                  </div>
-                  <div class="product__add-wish">
-                    <a href="#" class="product__add-wish-btn"
-                      ><i class="fa-solid fa-heart"></i
-                    ></a>
-                  </div>
-                </div>
-                <div class="product__details-meta mb-20">
-                  <div class="sku">
-                    <span>SKU:</span>
-                    <a href="#">BO1D0MX8SJ</a>
-                  </div>
-                  <div class="categories">
-                    <span>Categories:</span> <a href="#">Milk,</a>
-                    <a href="#">Cream,</a> <a href="#">Fermented.</a>
-                  </div>
-                  <div class="tag">
-                    <span>Tags:</span> <a href="#"> Cheese,</a>
-                    <a href="#">Custard,</a> <a href="#">Frozen</a>
-                  </div>
-                </div>
-                <div class="product__details-share">
-                  <span>Share:</span>
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-behance"></i></a>
-                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product__details-additional-info pt-120">
-            <div class="row">
-              <div class="col-xxl-3 col-xl-4 col-lg-4">
-                <div class="product__details-more-tab mr-15">
-                  <nav>
-                    <div
-                      class="nav nav-tabs flex-column"
-                      id="productmoretab"
-                      role="tablist"
-                    >
-                      <button
-                        class="nav-link active"
-                        id="nav-description-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-description"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-description"
-                        aria-selected="true"
-                      >
-                        Description
-                      </button>
-
-                      <button
-                        class="nav-link"
-                        id="nav-additional-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-additional"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-additional"
-                        aria-selected="false"
-                      >
-                        Additional Information
-                      </button>
-
-                      <button
-                        class="nav-link"
-                        id="nav-review-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-review"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-review"
-                        aria-selected="false"
-                      >
-                        Reviews (2)
-                      </button>
-
-                      <button
-                        class="nav-link"
-                        id="nav-size-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-size"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-size"
-                        aria-selected="false"
-                      >
-                        Size Chart
-                      </button>
-                    </div>
-                  </nav>
-                </div>
-              </div>
-              <div class="col-xxl-9 col-xl-8 col-lg-8">
-                <div class="product__details-more-tab-content">
-                  <div class="tab-content" id="productmorecontent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="nav-description"
-                      role="tabpanel"
-                      aria-labelledby="nav-description-tab"
-                    >
-                      <div class="product__details-des">
-                        <p>
-                          In marketing a product is an object or system made
-                          available for consumer use it is anything that can be
-                          offered to a market to the desire or need of a
-                          retailing, products are often referred to as
-                          merchandise, and in manufacturing, products are bought
-                          as materials and then sold as finished goods. A
-                          service regarded to as a type of product. Commodities
-                          are usually raw materials metals and agricultural
-                          products, but a commodity can also be anything wide
-                          the open market. In project management, the formal
-                          definition of the project deliverables
-                        </p>
-                        <p>
-                          A product can be classified as tangible or intangible.
-                          A tangible product is a physical object that can be
-                          perceived by touch building, vehicle, gadget, An
-                          intangible product is a product that can only be
-                          perceived indirectly such as an insurance policy. can
-                          be broadly classified under intangible be durable or
-                          non durable. A product line is "a group of products
-                          that are closely either because they function in a
-                          similar manner, are sold to the same customergroups.
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="nav-additional"
-                      role="tabpanel"
-                      aria-labelledby="nav-additional-tab"
-                    >
-                      <div class="product__details-info">
-                        <ul>
-                          <li>
-                            <h4>Weight</h4>
-                            <span>2 lbs</span>
-                          </li>
-                          <li>
-                            <h4>Dimensions</h4>
-                            <span>12 × 16 × 19 in</span>
-                          </li>
-                          <li>
-                            <h4>Product</h4>
-                            <span>Purchase this product on rag-bone.com</span>
-                          </li>
-                          <li>
-                            <h4>Color</h4>
-                            <span>Gray, Black</span>
-                          </li>
-                          <li>
-                            <h4>Size</h4>
-                            <span>S, M, L, XL</span>
-                          </li>
-                          <li>
-                            <h4>Model</h4>
-                            <span>Model </span>
-                          </li>
-                          <li>
-                            <h4>Shipping</h4>
-                            <span>Standard shipping: $5,95</span>
-                          </li>
-                          <li>
-                            <h4>Care Info</h4>
-                            <span
-                              >Machine Wash up to 40ºC/86ºF Gentle Cycle</span
-                            >
-                          </li>
-                          <li>
-                            <h4>Brand</h4>
-                            <span>Kazen</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="nav-review"
-                      role="tabpanel"
-                      aria-labelledby="nav-review-tab"
-                    >
-                      <div class="product__details-review">
-                        <h3 class="comments-title">
-                          03 reviews for “Wide Cotton Tunic extreme hammer”
-                        </h3>
-                        <div class="latest-comments mb-50">
+                <div class="bd-services__details-content mb-40">
+                  <div class="bd-services__details-text mb-45">
+                    <h3 class="bd-services__details-title">Dairy Consultation</h3>
+                    <div class="mb-30">
+                      <ol>
+                        <li>
+                          <strong>Business Planning &amp; Feasibility Studies</strong>
                           <ul>
-                            <li>
-                              <div class="comments-box d-flex">
-                                <div class="comments-avatar mr-10">
-                                  <img
-                                    src="assets/img/product/details/review-1.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="comments-text">
-                                  <div
-                                    class="comments-top d-sm-flex align-items-start justify-content-between mb-5"
-                                  >
-                                    <div class="avatar-name">
-                                      <h5>Siarhei Dzenisenka</h5>
-                                      <div class="comments-date">
-                                        <span>March 27, 2018 9:51 am</span>
-                                      </div>
-                                    </div>
-                                    <div class="user-rating">
-                                      <ul>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fal fa-star"></i
-                                          ></a>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <p>
-                                    This is cardigan is a comfortable warm
-                                    classic piece. Great to layer with a light
-                                    top and you can dress up or down given the
-                                    jewel buttons. I’m 5’8” 128lbs a 34A and the
-                                    Small fit fine.
-                                  </p>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="comments-box d-flex">
-                                <div class="comments-avatar mr-10">
-                                  <img
-                                    src="assets/img/product/details/review-2.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="comments-text">
-                                  <div
-                                    class="comments-top d-sm-flex align-items-start justify-content-between mb-5"
-                                  >
-                                    <div class="avatar-name">
-                                      <h5>Siarhei Dzenisenka</h5>
-                                      <div class="comments-date">
-                                        <span>March 27, 2018 9:51 am</span>
-                                      </div>
-                                    </div>
-                                    <div class="user-rating">
-                                      <ul>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <p>
-                                    I bought this beautiful pale gray cashmere
-                                    sweater for my daughter-in-law for her
-                                    birthday. She loves it and can wear it with
-                                    almost anything!
-                                  </p>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="comments-box d-flex">
-                                <div class="comments-avatar mr-10">
-                                  <img
-                                    src="assets/img/product/details/review-3.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="comments-text">
-                                  <div
-                                    class="comments-top d-sm-flex align-items-start justify-content-between mb-5"
-                                  >
-                                    <div class="avatar-name">
-                                      <h5>Siarhei Dzenisenka</h5>
-                                      <div class="comments-date">
-                                        <span>March 27, 2018 9:51 am</span>
-                                      </div>
-                                    </div>
-                                    <div class="user-rating">
-                                      <ul>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fas fa-star"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="#"
-                                            ><i class="fal fa-star"></i
-                                          ></a>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <p>
-                                    Amazing club. Sure the secruity is very
-                                    tight but actually made me and my friends
-                                    feel secure. You just have to go along with
-                                    the secruity. Bar staff and cloakroom staff
-                                    really friendly. Coming out at 7am into
-                                    bright London sunshine in Smithfields is an
-                                    amazing London experience
-                                  </p>
-                                </div>
-                              </div>
-                            </li>
+                            <li>Development of detailed business plans, including feed, animal flow, crop, and capital budgets</li>
+                            <li>Feasibility studies for new ventures, expansions, or diversification, with financial projections and operational timetables</li>
+                            <li>Assessment of market opportunities and risk analysis</li>
                           </ul>
+                        </li>
+                        <li>
+                          <strong>Financial Management &amp; Analysis</strong>
+                          <ul>
+                            <li>Budgeting, cash flow management, and cost of production analysis</li>
+                            <li>Financial ratio analysis, benchmarking, and accrual-adjusted performance reviews</li>
+                            <li>Preparation of financial statements for lenders, tax reporting, and management</li>
+                            <li>Setup and training for accounting systems and record-keeping</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>Market Research &amp; Business Model Development</strong>
+                          <ul>
+                            <li>Market segmentation, demand and price analysis, and competitive assessment</li>
+                            <li>Development of unique value propositions (UVP) and robust business models</li>
+                            <li>Location feasibility and value chain mapping</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>Herd &amp; Farm Management</strong>
+                          <ul>
+                            <li>Nutritional planning and animal health management</li>
+                            <li>Breeding advice and herd improvement strategies</li>
+                            <li>Farm layout and facility design to optimize workflow and animal welfare</li>
+                            <li>Milking optimization and milk quality assurance</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>Operational Optimization</strong>
+                          <ul>
+                            <li>Process improvement to boost productivity and sustainability</li>
+                            <li>Cost control and efficiency enhancement strategies</li>
+                            <li>Implementation of best practices in milking, hygiene, and equipment maintenance</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>Human Resource &amp; Training</strong>
+                          <ul>
+                            <li>Employee training in dairy operations, animal handling, and safety</li>
+                            <li>Management team meetings to encourage communication and forward planning</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>Regulatory Compliance &amp; Quality Assurance</strong>
+                          <ul>
+                            <li>Guidance on meeting local and national dairy regulations</li>
+                            <li>Implementation of quality control systems to ensure milk safety and compliance with industry standards</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>Technology &amp; Data Management</strong>
+                          <ul>
+                            <li>Introduction of dairy management tools for data-driven decision making (e.g., production tracking, benchmarking tools)</li>
+                            <li>Setup of record-keeping and data management systems for herd and financial records</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>Sales, Marketing &amp; Customer Engagement</strong>
+                          <ul>
+                            <li>Strategies for branding, customer acquisition, and retention</li>
+                            <li>Development of e-commerce and retail channel strategies</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <strong>Ongoing Support &amp; Advisory</strong>
+                          <ul>
+                            <li>Regular on-farm or virtual meetings for performance monitoring and strategic guidance</li>
+                            <li>Continuous support to adapt to industry trends and evolving challenges</li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="bd-services__details-features mb-40">
+                    <div class="bd-services__features-grid">
+                      <div class="bd-services__features-item">
+                        <div class="bd-services__features-icon">
+                          <span
+                            ><img
+                              src="assets/img/service/details/icon-01.png"
+                              alt="features-icon"
+                          /></span>
                         </div>
-                        <div class="product__details-comment pb-100">
-                          <div class="comment-title mb-20">
-                            <h3>Add a review</h3>
-                            <p>
-                              Your email address will not be published. Required
-                              fields are marked *
-                            </p>
-                          </div>
-                          <div class="comment-rating mb-20">
-                            <span>Overall ratings</span>
-                            <ul>
-                              <li>
-                                <a href="#"><i class="fas fa-star"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fas fa-star"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fas fa-star"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fas fa-star"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fal fa-star"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="comment-input-box">
-                            <form action="#">
-                              <div class="row">
-                                <div class="col-xxl-12">
-                                  <div class="comment-input">
-                                    <textarea
-                                      placeholder="Your review"
-                                    ></textarea>
-                                  </div>
-                                </div>
-                                <div class="col-xxl-6">
-                                  <div class="comment-input">
-                                    <input
-                                      type="text"
-                                      placeholder="Your Name*"
-                                    />
-                                  </div>
-                                </div>
-                                <div class="col-xxl-6">
-                                  <div class="comment-input">
-                                    <input
-                                      type="email"
-                                      placeholder="Your Email*"
-                                    />
-                                  </div>
-                                </div>
-                                <div class="col-xxl-12">
-                                  <div
-                                    class="comment-agree d-flex align-items-center mb-25"
-                                  >
-                                    <input
-                                      class="z-check-input"
-                                      type="checkbox"
-                                      id="z-agree"
-                                    />
-                                    <label class="z-check-label" for="z-agree"
-                                      >Save my name, email, and website in this
-                                      browser for the next time I
-                                      comment.</label
-                                    >
-                                  </div>
-                                </div>
-                                <div class="col-xxl-12">
-                                  <div class="comment-submit">
-                                    <button type="submit" class="bd-fill__btn">
-                                      Submit
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
+                        <div class="bd-services__features-content">
+                          <h3>
+                            <a href="#"
+                              >Understanding Sustainable Dairy Farming
+                            </a>
+                          </h3>
+                          <p>
+                            Sustainable dairy farming focuses on producing milk
+                            in a way that balances environmental, economic, and
+                            social considerations, ensuring long-term viability
+                            for the dairy industry and the planet.
+                          </p>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="nav-size"
-                      role="tabpanel"
-                      aria-labelledby="nav-size-tab"
-                    >
-                      <div class="product-size-wrapper fix">
-                        <div class="product__details-size-table">
-                          <table class="table text-center">
-                            <thead>
-                              <tr>
-                                <th>Size (US)</th>
-                                <th>Chest</th>
-                                <th>Neck</th>
-                                <th>Waist</th>
-                                <th>Arm Length</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>X</td>
-                                <td>32-34</td>
-                                <td>13-13.5</td>
-                                <td>26-28</td>
-                                <td>31-32</td>
-                              </tr>
-                              <tr>
-                                <td>S</td>
-                                <td>35-37</td>
-                                <td>14-14.5</td>
-                                <td>29-31</td>
-                                <td>32-33</td>
-                              </tr>
-                              <tr>
-                                <td>M</td>
-                                <td>38-40</td>
-                                <td>15-15.5</td>
-                                <td>32-34</td>
-                                <td>33-34</td>
-                              </tr>
-                              <tr>
-                                <td>L</td>
-                                <td>41-43</td>
-                                <td>16-16.5</td>
-                                <td>35-37</td>
-                                <td>34-35</td>
-                              </tr>
-                              <tr>
-                                <td>XL</td>
-                                <td>44-46</td>
-                                <td>17-17.5</td>
-                                <td>38-40</td>
-                                <td>35-36</td>
-                              </tr>
-                              <tr>
-                                <td>XXL</td>
-                                <td>47-49</td>
-                                <td>18-18.5</td>
-                                <td>41-43</td>
-                                <td>36-37</td>
-                              </tr>
-                              <tr>
-                                <td>XXXL</td>
-                                <td>50-52</td>
-                                <td>18-18.5</td>
-                                <td>44-45</td>
-                                <td>36-37</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                      <div class="bd-services__features-item">
+                        <div class="bd-services__features-icon">
+                          <span
+                            ><img
+                              src="assets/img/service/details/icon-02.png"
+                              alt="features-icon"
+                          /></span>
+                        </div>
+                        <div class="bd-services__features-content">
+                          <h3><a href="#">Commercial Farming</a></h3>
+                          <p>
+                            Dairy farm waste can be effectively utilized through
+                            composting, biogas production, and integration with
+                            organic agriculture. Composting converts manure and
+                            other organic materials into a nutrient-rich soil
+                            amendment. Biogas production, through anaerobic
+                            digestion, generates renewable energy and leaves a
+                            nutrient-rich digestate that can be used as
+                            fertilizer.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="bd-services__features-item">
+                        <div class="bd-services__features-icon">
+                          <span
+                            ><img
+                              src="assets/img/service/details/icon-03.png"
+                              alt="features-icon"
+                          /></span>
+                        </div>
+                        <div class="bd-services__features-content">
+                          <h3>
+                            <a href="#"
+                              >Challenges and Barriers to Sustainability
+                            </a>
+                          </h3>
+                          <p>
+                            Dairy farming faces numerous challenges, including
+                            economic instability due to fluctuating milk prices,
+                            environmental concerns like greenhouse gas
+                            emissions, and the need for better animal welfare
+                            practices.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="bd-services__features-item">
+                        <div class="bd-services__features-icon">
+                          <span
+                            ><img
+                              src="assets/img/service/details/icon-04.png"
+                              alt="features-icon"
+                          /></span>
+                        </div>
+                        <div class="bd-services__features-content">
+                          <h3>
+                            <a href="#"
+                              >The Role of Technology in Sustainable Dairy
+                              Farming
+                            </a>
+                          </h3>
+                          <p>
+                            Technology plays a crucial role in modern dairy
+                            farming, enabling increased efficiency, precision,
+                            and sustainability. From automating milking and
+                            feeding to utilizing data-driven insights for herd
+                            management and improving animal health, technology
+                            is revolutionizing the industry.
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="bd-services__delivery mb-45">
+                    <h3 class="bd-services__delivery-title">
+                      Starting a milk farm start to finish
+                    </h3>
+                    <div class="bd-services__delivery-item">
+                      <ul>
+                        <li>
+                          <i class="fa-light fa-square-check"></i>
+                          <p>
+                            <span>Introduction and Goal Setting:</span>
+
+                            - Meet with the client to discuss their vision,
+                            challenges, and objectives for their dairy business.
+                            - Understand their goals—whether it's improving milk
+                            yield, transitioning to organic farming, enhancing
+                            animal welfare, or boosting profitability.
+                          </p>
+                        </li>
+                        <li>
+                          <i class="fa-light fa-square-check"></i>
+                          <p>
+                            <span>Data Collection and Analysis</span> - Gather
+                            critical data on:- Milk production trends. -
+                            Livestock health and veterinary records. - Financial
+                            performance (cost of feed, medical expenses, milk
+                            sales). - Equipment efficiency and maintenance
+                            schedules. - Analyze the information to identify key
+                            pain points and areas for improvement.
+                          </p>
+                        </li>
+                        <li>
+                          <i class="fa-light fa-square-check"></i>
+                          <p>
+                            <span>Implementation Planning </span>
+                            - Provide a detailed action plan, breaking down
+                            tasks into manageable steps with timelines and
+                            responsibilities. - Offer hands-on training for
+                            staff or farmers on adopting new practices, such as
+                            composting, improved milking routines, or
+                            sustainable waste management.
+                          </p>
+                        </li>
+                        <li>
+                          <i class="fa-light fa-square-check"></i>
+                          <p>
+                            <span>Continuous Engagement </span> - Encourage
+                            ongoing collaboration by offering periodic
+                            check-ins, additional training, or updates on
+                            industry best practices. - Build a relationship with
+                            the client to support their growth and address
+                            future challenges proactively.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
                 </div>
               </div>
+            </div>
+
+             
+             
             </div>
           </div>
         </div>
       </div>
-      <!-- Product details area end -->
 
-      <!-- Related product area start -->
-      <section
-        class="bd-related__product-area p-relative z-index-1 fix grey-bg pt-120 pb-70"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="bd-section__title-wrapper mb-50">
-              <span class="bd-sub__title">Related Product</span>
-              <h2 class="bd-section__title">hand-picked item</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="features__inner p-relative">
-                <div class="product__active swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="bd-product__item text-center mb-50">
-                        <div class="bd-product__img w-img">
-                          <img
-                            src="assets/img/product/product-02.jpg"
-                            alt="product-img"
-                          />
-                        </div>
-                        <div class="bd-product__content">
-                          <h4>pure 500ml milk</h4>
-                          <span class="bd-product__new-price">$45.00</span>
-                          <span class="bd-product__new-price">$35.00</span>
-                        </div>
-                        <div class="bd-product__action">
-                          <a
-                            class="cart-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick View"
-                            data-bs-toggle="modal"
-                            ><i class="fal fa-cart-arrow-down"></i
-                          ></a>
-                          <a
-                            href="#"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Shop"
-                            data-bs-toggle="modal"
-                            data-bs-target="#productmodal"
-                            ><i class="fal fa-eye"></i
-                          ></a>
-                          <a
-                            class="wishlist-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Wishlist"
-                            data-bs-toggle="modal"
-                          >
-                            <i class="fal fa-heart"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="bd-product__item text-center mb-50">
-                        <div class="bd-product__img w-img">
-                          <img
-                            src="assets/img/product/product-03.jpg"
-                            alt="product-img"
-                          />
-                        </div>
-                        <div class="bd-product__content">
-                          <h4>fresh meat 1kg</h4>
-                          <span class="bd-product__new-price">$32.00</span>
-                        </div>
-                        <div class="bd-product__action">
-                          <a
-                            class="cart-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick View"
-                            data-bs-toggle="modal"
-                            ><i class="fal fa-cart-arrow-down"></i
-                          ></a>
-                          <a
-                            href="#"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Shop"
-                            data-bs-toggle="modal"
-                            data-bs-target="#productmodal"
-                            ><i class="fal fa-eye"></i
-                          ></a>
-                          <a
-                            class="wishlist-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Wishlist"
-                            data-bs-toggle="modal"
-                          >
-                            <i class="fal fa-heart"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="bd-product__item text-center mb-50">
-                        <div class="bd-product__img w-img">
-                          <img
-                            src="assets/img/product/product-04.jpg"
-                            alt="product-img"
-                          />
-                        </div>
-                        <div class="bd-product__content">
-                          <h4>mikado cheese bar</h4>
-                          <span class="bd-product__new-price">$28.00</span>
-                          <span class="bd-product__old-price">$20.00</span>
-                        </div>
-                        <div class="bd-product__action">
-                          <a
-                            class="cart-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick View"
-                            data-bs-toggle="modal"
-                            ><i class="fal fa-cart-arrow-down"></i
-                          ></a>
-                          <a
-                            href="#"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Shop"
-                            data-bs-toggle="modal"
-                            data-bs-target="#productmodal"
-                            ><i class="fal fa-eye"></i
-                          ></a>
-                          <a
-                            class="wishlist-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Wishlist"
-                            data-bs-toggle="modal"
-                          >
-                            <i class="fal fa-heart"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="bd-product__item text-center mb-50">
-                        <div class="bd-product__img w-img">
-                          <img
-                            src="assets/img/product/product-05.jpg"
-                            alt="product-img"
-                          />
-                        </div>
-                        <div class="bd-product__content">
-                          <h4>custard oil 500ml</h4>
-                          <span class="bd-product__new-price">$22.00</span>
-                        </div>
-                        <div class="bd-product__action">
-                          <a
-                            class="cart-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick View"
-                            data-bs-toggle="modal"
-                            ><i class="fal fa-cart-arrow-down"></i
-                          ></a>
-                          <a
-                            href="#"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Shop"
-                            data-bs-toggle="modal"
-                            data-bs-target="#productmodal"
-                            ><i class="fal fa-eye"></i
-                          ></a>
-                          <a
-                            class="wishlist-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Wishlist"
-                            data-bs-toggle="modal"
-                          >
-                            <i class="fal fa-heart"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="bd-product__item text-center mb-50">
-                        <div class="bd-product__img w-img">
-                          <img
-                            src="assets/img/product/product-06.jpg"
-                            alt="product-img"
-                          />
-                        </div>
-                        <div class="bd-product__content">
-                          <h4>fresh meat 1kg</h4>
-                          <span class="bd-product__new-price">$32.00</span>
-                        </div>
-                        <div class="bd-product__action">
-                          <a
-                            class="cart-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick View"
-                            data-bs-toggle="modal"
-                            ><i class="fal fa-cart-arrow-down"></i
-                          ></a>
-                          <a
-                            href="#"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Shop"
-                            data-bs-toggle="modal"
-                            data-bs-target="#productmodal"
-                            ><i class="fal fa-eye"></i
-                          ></a>
-                          <a
-                            class="wishlist-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Wishlist"
-                            data-bs-toggle="modal"
-                          >
-                            <i class="fal fa-heart"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="bd-product__item text-center mb-50">
-                        <div class="bd-product__img w-img">
-                          <img
-                            src="assets/img/product/product-07.jpg"
-                            alt="product-img"
-                          />
-                        </div>
-                        <div class="bd-product__content">
-                          <h4>custard oil 500ml</h4>
-                          <span class="bd-product__new-price">$24.00</span>
-                        </div>
-                        <div class="bd-product__action">
-                          <a
-                            class="cart-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick View"
-                            data-bs-toggle="modal"
-                            ><i class="fal fa-cart-arrow-down"></i
-                          ></a>
-                          <a
-                            href="#"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Shop"
-                            data-bs-toggle="modal"
-                            data-bs-target="#productmodal"
-                            ><i class="fal fa-eye"></i
-                          ></a>
-                          <a
-                            class="wishlist-btn"
-                            href="javascript:void(0)"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Quick Wishlist"
-                            data-bs-toggle="modal"
-                          >
-                            <i class="fal fa-heart"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="bd-product__navigatin s-2">
-                  <button class="product-button-prev">
-                    <i class="far fa-long-arrow-left"></i>
-                  </button>
-                  <button class="product-button-next">
-                    <i class="far fa-long-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Related product area end -->
+      <!-- Service details area end -->
     </main>
     <!-- Body main wrapper end -->
 
     <!-- Footer area start -->
     <footer>
-      <section class="bd-footer__area green-bg foo p-relative pt-95">
-        <div class="bd-footer__bg w-img">
-          <img src="assets/img/bg/footer-bg.png" alt="footer-bg" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="bd-footer__widget footer-col-1 mb-60">
-                <div class="bd-footer__title">
-                  <h4>about us</h4>
-                </div>
-                <div class="bd-footer__paragraph">
-                  <p>
-                    A farm is a plot of land that is used to grow crops and
-                    raise livestock, as in our farm, we raise sheep and sell
-                    their wool. The word farm is also used as a verb to mean to
-                    work land.
-                  </p>
-                </div>
-                <div class="bd-footer__social">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-behance-square"></i></a>
-                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="bd-footer__widget footer-col-2 mb-60">
-                <div class="bd-footer__title">
-                  <h4>Services</h4>
-                </div>
-                <div class="bd-footer__link">
-                  <ul>
-                    <li><a href="#">Agriculture Foods</a></li>
-                    <li><a href="#">Eggs & Meets</a></li>
-                    <li><a href="#">Organic Vegetables</a></li>
-                    <li><a href="#">Fresh Milk</a></li>
-                    <li><a href="#">Pond & Sea Fish</a></li>
-                    <li><a href="#">House Hold</a></li>
-                    <li><a href="#">Cow Milk & Meat</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Natural Wheats</a></li>
-                    <li><a href="#">Organic Food</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="bd-footer__widget footer-col-3 mb-60">
-                <div class="bd-footer__title">
-                  <h4>Business hours</h4>
-                </div>
-                <div class="bd-footer__contact">
-                  <div class="bd-footer__contact-item">
-                    <span>Mon - Fri</span>
-                    <p class="mb-20">10:00 am to 06:00 pm</p>
+      <section
+        class="bd-footer__area p-relative"
+        data-background="assets/img/bg/section-bg.jpg"
+      >
+        <div class="footer__style-2">
+          <div class="bd-footer__top">
+            <div class="container">
+              <div class="bd-footer__top-main white-bg">
+                <div class="row align-items-center">
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="bd-footer__top-link">
+                      <ul>
+                         <li><a href="gallery.html">Gallery</a></li> 
+                         <li><a href="shop.html">Shop</a></li>
+                        
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="bd-footer__contact-item">
-                    <span>Saturday (1st & 4th)</span>
-                    <p class="mb-25">08:00 am to 04:00 pm</p>
-                  </div>
-                  <div class="bd-footer__support">
-                    <div class="bd-footer__support-inner">
-                      <div class="bd-footer__support-icon">
+                  <div class="col-xl-4 col-lg-4 col-md-6 d-none d-lg-block">
+                    <div class="bd-footer__logo p-relative">
+                      <a href="index.html">
                         <img
-                          src="assets/img/icon/footer-text.png"
-                          alt="footer-text"
+                          class="bd-footer__top-logo"
+                          src="assets/img/logo/logo (1).png"
+                          alt="logo"
+                           style="
+                            max-width: 160px;
+                            height: auto;
+                            display: block;
+                            margin: 0 auto;
+                          "
                         />
-                      </div>
-                      <div class="bd-footer__support-title">
-                        <span>Emergency Service</span>
-                        <a href="tel:00011122233">000 111 222 33</a>
-                      </div>
+                      </a>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-8 col-md-6">
-              <div class="bd-footer__widget footer-col-4 mb-60">
-                <div class="bd-footer__title">
-                  <h4>Subscribe us</h4>
-                </div>
-                <div class="bd-footer__subcribe">
-                  <p>
-                    Subscribe us & recive our office & update in your inbox
-                    directly
-                  </p>
-                  <form action="#">
-                    <div class="bd-footer__input p-relative mb-20">
-                      <input type="text" placeholder="info@webmail.com" />
-                      <i class="fa-solid fa-envelope-open"></i>
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div
+                      class="bd-footer__top-social text-md-end d-none d-md-block"
+                    >
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"
+                        ><i class="fa-brands fa-behance-square"></i
+                      ></a>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     </div>
-                    <button type="button" class="bd-theme__btn-3">
-                      subscribe now
-                    </button>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="bd-copyright__area">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="bd-copyright__main">
-                  <div class="bd-copyright__border">
-                    <div class="bd-copyright__text">
+          <div class="bd-footer__main">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="bd-footer__widget footer-col-1 mb-50">
+                    <div class="bd-footer__title">
+                      <h4>about us</h4>
+                    </div>
+                    <div class="bd-footer__paragraph">
                       <p>
-                        Copyright design by
-                        <span
-                          ><a
-                            target="_blank"
-                            href="https://themeforest.net/user/bdevs/portfolio"
-                            >@bdevs</a
-                          ></span
-                        >
-                        - 2022
+                        At Satvik Dairy Farm,we believe in delivering purity
+                        straight from nature to your home.With a commitment to
+                        traditional methods and sustainable practices,we ensure
+                        every drop of milk is rich in nutrition and taste.From
+                        our family to yours pure,natural,and truly Satvik.
                       </p>
+                      <div class="bd-link__btn">
+                        <a href="contact.html">get in touch</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="bd-footer__widget footer-col-2 mb-50">
+                    <div class="bd-footer__title">
+                      <h4>Services</h4>
+                    </div>
+                    <div class="bd-footer__link">
+                      <ul>
+                        <li><a href="#">Fresh Cow Milk</a></li>
+                        <li><a href="#">Manure</a></li>
+                        <li><a href="#">Fresh Milk Products</a></li>
+
+                        <li><a href="#">Other Products</a></li>
+                        <li><a href="#">Dairy Consultation</a></li>
+                        <li><a href="#">Dairy Farm Visit</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="bd-footer__widget footer-col-3 mb-50">
+                    <div class="bd-footer__title">
+                      <h4>Business hours</h4>
+                    </div>
+                    <div class="bd-footer__contact">
+                      <div class="bd-footer__contact-item">
+                        <span>Mon - Fri</span>
+                        <p class="mb-20">10:00 am to 06:00 pm</p>
+                      </div>
+                      <div class="bd-footer__contact-item">
+                        <span>Saturday (1st & 4th)</span>
+                        <p class="mb-25">08:00 am to 04:00 pm</p>
+                      </div>
+                      <div class="bd-footer__support">
+                        <div class="bd-footer__support-inner">
+                          <div class="bd-footer__support-icon">
+                            <img
+                              src="assets/img/icon/footer-text-2.png"
+                              alt="footer-text"
+                            />
+                          </div>
+                          <div class="bd-footer__support-title">
+                            <span>Contact Us</span>
+                            <a href="tel:+91-8200718103">+91 8200718103</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-8 col-md-6">
+                  <div class="bd-footer__widget footer-col-4 mb-50">
+                    <div class="bd-footer__title">
+                      <h4>Subscribe us</h4>
+                    </div>
+                    <div class="bd-footer__subcribe">
+                      <p>
+                        Subscribe us & recive our office & update in your inbox
+                        directly
+                      </p>
+                      <form action="#">
+                        <div class="bd-footer__input p-relative mb-20">
+                          <input type="text" placeholder="info@webmail.com" />
+                          <i class="fa-solid fa-envelope-open"></i>
+                        </div>
+                        <button class="bd-theme__btn-3">subscribe now</button>
+                      </form>
                     </div>
                   </div>
                 </div>

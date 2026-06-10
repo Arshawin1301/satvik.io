@@ -28,6 +28,115 @@
     <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/navbar.css"/>
 
+    <style>
+      /* Modern Shop Styles */
+      /* Modern & Refined Shop Styles */
+      body, .bd-product__area {
+        background-color: #f9fbfa; /* Soft background to make cards pop */
+      }
+      .bd-product__item {
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        overflow: hidden;
+        border: 1px solid #f0f0f0;
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        position: relative;
+      }
+      .bd-product__item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        border-color: transparent;
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      }
+      .bd-product__img {
+        position: relative;
+        overflow: hidden;
+        position: relative;
+        padding: 20px;
+        background: #f8f9fa;
+        background: #ffffff;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1 / 1;
+      }
+      .bd-product__img img {
+        transition: transform 0.5s ease;
+        border-radius: 8px;
+        mix-blend-mode: multiply;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        border-radius: 0;
+      }
+      .bd-product__item:hover .bd-product__img img {
+        transform: scale(1.08);
+        transform: scale(1.1);
+      }
+      .bd-product__content {
+        padding: 20px 15px;
+        padding: 24px 20px;
+        background: #fff;
+        text-align: center;
+      }
+      .bd-product__content h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #2c3e50;
+        color: #1a1a1a;
+        margin-bottom: 10px;
+        transition: color 0.3s;
+        transition: color 0.3s ease;
+        letter-spacing: -0.2px;
+      }
+      .bd-product__item:hover .bd-product__content h4 {
+        color: #4caf50;
+        color: #10b981;
+      }
+      .bd-product__new-price {
+        font-size: 18px;
+        font-weight: 700;
+        color: #e74c3c;
+        color: #10b981;
+      }
+      .bd-product__old-price {
+        font-size: 14px;
+        color: #95a5a6;
+        color: #9ca3af;
+        margin-left: 8px;
+        text-decoration: line-through;
+      }
+      /* Sale Badge */
+      .sale-badge {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background: #e74c3c;
+        top: 16px;
+        left: 16px;
+        background: #ef4444;
+        color: white;
+        padding: 4px 12px;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        z-index: 2;
+        box-shadow: 0 2px 10px rgba(231, 76, 60, 0.3);
+        box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+      }
+    </style>
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -204,124 +313,6 @@
     <div class="offcanvas-overlay-white"></div>
     <!-- Offcanvas area start -->
 
-    <!-- Cartmini sidber start -->
-    <div class="fix">
-      <div class="shoping__sidebar">
-        <div class="cartmini__wrapper">
-          <div class="cartmini__title">
-            <h4>Shopping Cart</h4>
-          </div>
-          <div class="cartmini__close">
-            <button type="button"><i class="fal fa-times"></i></button>
-          </div>
-          <div class="cartmini__widget">
-            <div class="cartmini__inner">
-              <ul>
-                <li>
-                  <div class="cartmini__thumb">
-                    <a href="product-details.html">
-                      <img
-                        src="assets/img/product/quick-view/quick-view-01.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div class="cartmini__content">
-                    <h5><a href="product-details.html">sweet milk Cream</a></h5>
-                    <div class="product-quantity mt-10 mb-10">
-                      <span class="cart-minus">-</span>
-                      <input class="cart-input" type="text" value="1" />
-                      <span class="cart-plus">+</span>
-                    </div>
-                    <div class="product__sm-price-wrapper">
-                      <span class="product__sm-price">₹46.00</span>
-                    </div>
-                  </div>
-                  <a href="#" class="cartmini__del"
-                    ><i class="fal fa-times"></i
-                  ></a>
-                </li>
-                <li>
-                  <div class="cartmini__thumb">
-                    <a href="product-details.html">
-                      <img
-                        src="assets/img/product/quick-view/quick-view-02.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div class="cartmini__content">
-                    <h5><a href="product-details.html">pure 1000ml milk</a></h5>
-                    <div class="product-quantity mt-10 mb-10">
-                      <span class="cart-minus">-</span>
-                      <input class="cart-input" type="text" value="1" />
-                      <span class="cart-plus">+</span>
-                    </div>
-                    <div class="product__sm-price-wrapper">
-                      <span class="product__sm-price">₹32.00</span>
-                    </div>
-                  </div>
-                  <a href="#" class="cartmini__del"
-                    ><i class="fal fa-times"></i
-                  ></a>
-                </li>
-                <li>
-                  <div class="cartmini__thumb">
-                    <a href="product-details.html">
-                      <img
-                        src="assets/img/product/quick-view/quick-view-03.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div class="cartmini__content">
-                    <h5>
-                      <a href="product-details.html">mikado cheese bar</a>
-                    </h5>
-                    <div class="product-quantity mt-10 mb-10">
-                      <span class="cart-minus">-</span>
-                      <input class="cart-input" type="text" value="1" />
-                      <span class="cart-plus">+</span>
-                    </div>
-                    <div class="product__sm-price-wrapper">
-                      <span class="product__sm-price">₹62.00</span>
-                    </div>
-                  </div>
-                  <a href="product-details.html" class="cartmini__del"
-                    ><i class="fal fa-times"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="cartmini__checkout">
-              <div class="cartmini__checkout-title mb-30">
-                <h4>Subtotal:</h4>
-                <span>₹113.00</span>
-              </div>
-              <div class="cartmini__checkout-btn">
-                <a href="cart.html" class="bd-fill__btn w-100">
-                  <span></span> view cart</a
-                >
-                <a href="checkout.html" class="bd-fill__btn-2 w-100">
-                  <span></span> checkout</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Cartmini sidber end -->
-
-    <!-- Added to cart message  -->
-    <div class="added-to-cart">
-      <div class="added-to-cart-content d-flex align-items-center">
-        <i class="fa-light fa-check"></i>
-        <p>Successfully Added to cart</p>
-        <span class="bd-action__item-number cart-count">0</span>
-      </div>
-    </div>
-
     <!-- Added to wishlist message -->
     <div class="added-to-wishlist">
       <div class="added-to-cart-content d-flex align-items-center">
@@ -497,27 +488,6 @@
                       <span>In Stock</span>
                     </div>
                     <div class="product__details-action mb-20">
-                      <div class="product__quantity">
-                        <div class="product-quantity-wrapper">
-                          <form action="#">
-                            <button class="cart-minus">
-                              <i class="fa-light fa-minus"></i>
-                            </button>
-                            <input class="cart-input" type="text" value="1" />
-                            <button class="cart-plus">
-                              <i class="fa-light fa-plus"></i>
-                            </button>
-                          </form>
-                        </div>
-                      </div>
-                      <div class="product__add-cart">
-                        <a
-                          href="javascript:void(0)"
-                          class="bd-fill__btn cart-btn"
-                          ><i class="fa-solid fa-basket-shopping"></i> Add To
-                          Cart</a
-                        >
-                      </div>
                       <div class="product__add-wish">
                         <a href="#" class="product__add-wish-btn"
                           ><i class="fa-solid fa-heart"></i
@@ -677,7 +647,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="service-details.html">
-                  <i class="fas fa-concierge-bell me-1"></i> Services
+                  <i class="fas fa-concierge-bell me-1"></i> Consultation
                 </a>
               </li>
               <li class="nav-item">
@@ -724,7 +694,7 @@
                 </nav>
               </div>
               <div class="bd-breadcrumb__title">
-                <h2>our shop</h2>
+                <h2>Our Shop</h2>
               </div>
             </div>
           </div>
@@ -736,81 +706,7 @@
       <section class="bd-product__area pt-115 pb-90">
         <div class="container">
           <div class="row">
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-              <div class="bd-product__result mb-30">
-                <h4>20 Item On List</h4>
-              </div>
-            </div>
-            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-6">
-              <div
-                class="product__filter-wrapper d-flex align-items-center justify-content-md-end mb-30"
-              >
-                <div class="bd-product__filter-btn">
-                  <button type="button">
-                    <i class="fa-solid fa-list"></i> Filter
-                  </button>
-                </div>
-                <div class="product__filter-count d-flex align-items-center">
-                  <div class="btn__dropdown p-relative">
-                    <button class="btn-dropdown__link">
-                      <span
-                        >Show 12<i class="fa-regular fa-angle-down"></i
-                      ></span>
-                    </button>
-                    <div class="btn-dropdown__options">
-                      <ul>
-                        <li><a href="#">Show 20</a></li>
-                        <li><a href="#">This Past Week</a></li>
-                        <li><a href="#">This Past Month</a></li>
-                        <li><a href="#">This Past Year</a></li>
-                        <li><a href="#">All Time</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="bd-product__filter-style nav nav-tabs"
-                  role="tablist"
-                >
-                  <button
-                    class="nav-link active"
-                    id="nav-grid-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-grid"
-                    type="button"
-                    role="tab"
-                    aria-selected="true"
-                    aria-label="Grid View"
-                  >
-                    <i class="fa-solid fa-grid"></i>
-                  </button>
-                  <!--<button
-                    class="nav-link"
-                    id="nav-list-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-list"
-                    type="button"
-                    role="tab"
-                    aria-selected="false"
-                    aria-label="List View"
-                  >
-                    <i class="fa-solid fa-bars"></i>
-                  </button>
-                  -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
             <div class="col-xxl-12">
-              <div class="product__filter-tab">
-                <div class="tab-content" id="nav-tabContent">
-                  <div
-                    class="tab-pane fade active show"
-                    id="nav-grid"
-                    role="tabpanel"
-                    aria-labelledby="nav-grid-tab"
-                  >
                     <div class="row">
                       <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="bd-product__item text-center mb-30">
@@ -829,6 +725,7 @@
                       <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="bd-product__item text-center mb-30">
                           <div class="bd-product__img">
+                            <span class="sale-badge">Sale</span>
                             <img
                               src="assets/img/product/product-02.jpg"
                               alt="Full Fat Milk"
@@ -860,6 +757,7 @@
                       <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="bd-product__item text-center mb-30">
                           <div class="bd-product__img">
+                            <span class="sale-badge">Sale</span>
                             <img
                               src="assets/img/product/product-03.jpg"
                               alt="Normal 1kg Ghee"
@@ -891,6 +789,7 @@
                       <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="bd-product__item text-center mb-30">
                           <div class="bd-product__img">
+                            <span class="sale-badge">Sale</span>
                             <img
                               src="assets/img/product/product-07.jpg"
                               alt="Butter Milk 1 Liter"
@@ -915,7 +814,6 @@
                           </div>
                           <div class="bd-product__content">
                             <h4>Masala Chaas [1 liter]</h4>
-                            </h4>
                             <span class="bd-product__new-price">₹30.00</span>
                           </div>
                         </div>
@@ -923,6 +821,7 @@
                       <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="bd-product__item text-center mb-30">
                           <div class="bd-product__img">
+                            <span class="sale-badge">Sale</span>
                             <img
                               src="assets/img/product/product-04.jpg"
                               alt="Full Fat Curd"
@@ -954,6 +853,7 @@
                       <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="bd-product__item text-center mb-30">
                           <div class="bd-product__img">
+                            <span class="sale-badge">Sale</span>
                             <img
                               src="assets/img/product/product-05.jpg"
                               alt="Lassi 250ml Milk"
@@ -972,7 +872,7 @@
                         <div class="bd-product__item text-center mb-30">
                           <div class="bd-product__img">
                             <img
-                              src="assets/img/product/product-12.jpg"
+                              src="assets/img/product/product-11.jpg"
                               alt="Fresh Paneer"
                             />
                           </div>
@@ -985,9 +885,10 @@
                       <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="bd-product__item text-center mb-30">
                           <div class="bd-product__img">
+                            <span class="sale-badge">Sale</span>
                             <img
                               src="assets/img/product/product-09.jpg"
-                              alt="Custard"
+                              alt="Vermicompost"
                             />
                           </div>
                           <div class="bd-product__content">
@@ -997,733 +898,27 @@
                               ><del>₹450.00</del></span
                             >
                           </div>
-                          
                         </div>
                       </div>
                       <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="bd-product__item text-center mb-30">
                           <div class="bd-product__img">
+                            <span class="sale-badge">Sale</span>
                             <img
-                              src="assets/img/product/product-09.jpg"
-                              alt="Custard"
+                              src="assets/img/product/product-08.jpg"
+                              alt="Cow Dung"
                             />
                           </div>
                           <div class="bd-product__content">
-                            <h4>Vermicompost[50kg]</h4>
-                            <span class="bd-product__new-price">₹400.00</span>
+                            <h4>Cow Dung</h4>
+                            <span class="bd-product__new-price">₹150.00</span>
                             <span class="bd-product__old-price"
-                              ><del>₹450.00</del></span
+                              ><del>₹200.00</del></span
                             >
                           </div>
-                          
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="nav-list"
-                    role="tabpanel"
-                    aria-labelledby="nav-list-tab"
-                  >
-                    <div class="row">
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-11.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>organic fresh meat 3kg</h4>
-                              <span class="bd-product__new-price">₹25.00</span>
-                              <span class="bd-product__old-price"
-                                ><del>₹20.00</del></span
-                              >
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-02.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>mikado cheese bar</h4>
-                              <span class="bd-product__new-price">₹34.00</span>
-                              <span class="bd-product__old-price"
-                                ><del>₹24.00</del></span
-                              >
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-03.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>fresh meat 1kg</h4>
-                              <span class="bd-product__new-price">₹34.00</span>
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-04.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>custard oil 500ml</h4>
-                              <span class="bd-product__new-price">₹28.00</span>
-                              <span class="bd-product__old-price"
-                                ><del>₹24.00</del></span
-                              >
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-05.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>mikado cheese bar</h4>
-                              <span class="bd-product__new-price">₹25.00</span>
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-06.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>pure 500ml milk</h4>
-                              <span class="bd-product__new-price">₹25.00</span>
-                              <span class="bd-product__old-price"
-                                ><del>₹15.00</del></span
-                              >
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-07.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>pure 500ml milk</h4>
-                              <span class="bd-product__new-price">₹30.00</span>
-                              <span class="bd-product__old-price"
-                                ><del>₹20.00</del></span
-                              >
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-08.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>pure 500ml milk</h4>
-                              <span class="bd-product__new-price">₹35.00</span>
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-09.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>pure 500ml milk</h4>
-                              <span class="bd-product__new-price">₹15.00</span>
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-10.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>organic fresh Eggs</h4>
-                              <span class="bd-product__new-price">₹30.00</span>
-                              <span class="bd-product__old-price"
-                                ><del>₹40.00</del></span
-                              >
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-11.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>pure 500ml milk</h4>
-                              <span class="bd-product__new-price">₹23.00</span>
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-6 col-xl-6">
-                        <div
-                          class="bd-product__item item__list d-md-flex align-items-center mb-30"
-                        >
-                          <div class="bd-product__img">
-                            <img
-                              src="assets/img/product/product-12.jpg"
-                              alt="product-img"
-                            />
-                          </div>
-                          <div class="product__content-list">
-                            <div class="bd-product__content">
-                              <h4>pure 500ml milk</h4>
-                              <span class="bd-product__new-price">₹15.00</span>
-                              <span class="bd-product__old-price"
-                                ><del>₹25.00</del></span
-                              >
-                            </div>
-                            <ul>
-                              <li>An increase in conversion rate</li>
-                              <li>A decrease in cart abandonmen</li>
-                              <li>Fewer calls from shoppers</li>
-                              <li>An increase in conversion rate</li>
-                              <li>Improved organic search rankings</li>
-                            </ul>
-                            <div class="bd-product__action-2">
-                              <a
-                                class="cart-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick View"
-                                data-bs-toggle="modal"
-                                >Add To Cart</a
-                              >
-                              <a
-                                class="shop-action__btn"
-                                href="#"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Shop"
-                                data-bs-toggle="modal"
-                                data-bs-target="#productmodal"
-                                ><i class="fal fa-eye"></i
-                              ></a>
-                              <a
-                                class="wishlist-btn shop-action__btn"
-                                href="javascript:void(0)"
-                                data-toggle="tooltip"
-                                data-placement="top"
-                                title="Quick Wishlist"
-                                data-bs-toggle="modal"
-                              >
-                                <i class="fal fa-heart"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

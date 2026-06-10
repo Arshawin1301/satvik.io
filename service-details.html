@@ -26,6 +26,68 @@
     <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/navbar.css"/>
+    <style>
+      .bd-service-details__area {
+        background-color: #f9f9f9;
+      }
+      .service-card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+        transition: all 0.3s ease;
+        height: 100%;
+        text-align: center;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      }
+      .service-card__icon {
+        font-size: 48px;
+        color: var(--clr-theme-1);
+        margin-bottom: 20px;
+      }
+      .service-card__title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      .service-card__text {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.7;
+      }
+      .bd-process-step {
+        text-align: center;
+        padding: 20px;
+        position: relative;
+      }
+      .bd-process-step__number {
+        width: 60px;
+        height: 60px;
+        background-color: var(--clr-theme-2);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--clr-common-body-text);
+        margin-bottom: 20px;
+        border: 4px solid #fff;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      }
+      .bd-process-step__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .bd-cta__area {
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -588,8 +650,8 @@
             <div class="col-lg-8">
               <div class="d-flex align-items-center">
                 <div class="me-4">
-                  <a href="mailto:info@satvikdairy.com" class="text-white text-decoration-none">
-                    <i class="fas fa-envelope me-2"></i>info@satvikdairy.com
+                  <a href="mailto:satvik.milkfarm@gmail.com" class="text-white text-decoration-none">
+                    <i class="fas fa-envelope me-2"></i>satvik.milkfarm@gmail.com
                   </a>
                 </div>
                 <div class="me-4">
@@ -644,9 +706,9 @@
                   <i class="fas fa-images me-1"></i> Gallery
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link active" href="service-details.html">
-                  <i class="fas fa-concierge-bell me-1"></i> Services
+                  <i class="fas fa-concierge-bell me-1"></i> Consultation
                 </a>
               </li>
               <li class="nav-item">
