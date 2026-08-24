@@ -3082,6 +3082,7 @@ input.e-check-input:checked::after {
   -ms-border-radius: 0px 0px 6px 0px;
   border-radius: 0px 0px 6px 0px;
   overflow: hidden;
+  mix-blend-mode: multiply; /* Removes any faint off-white box around the graphic */
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .bd-header__logo {
